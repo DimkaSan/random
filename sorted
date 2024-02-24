@@ -1,0 +1,17 @@
+import random
+
+def generate_and_sort_numbers():
+    # Генерация списка из 10 случайных чисел от 1 до 100
+    random_numbers = [random.randint(1, 100) for _ in range(10)]
+    print("Исходный список случайных чисел:", random_numbers)
+    
+    # Сортировка списка по возрастанию
+    sorted_numbers_asc = sorted(random_numbers)
+    print("Список, отсортированный по возрастанию:", sorted_numbers_asc)
+    
+    # Сортировка списка по убыванию
+    sorted_numbers_desc = sorted(random_numbers, reverse=True)
+    print("Список, отсортированный по убыванию:", sorted_numbers_desc)
+
+# Вызов функции
+generate_and_sort_numbers()
